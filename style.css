@@ -1,0 +1,28 @@
+html {
+  font-size: 10px;
+}
+.form-section {
+ margin: 2em 0;
+}
+.button {
+  display: block;
+  background: #2a76c5;
+  color: #f1f1f1;
+  box-shadow: none;
+  padding: 1.1em;
+  border: 2px solid #333;
+  margin: 2em;
+  font-size: 1.75em;
+  border-radius: 1em;
+}
+label {
+  font-size: 1.8em;
+  display: block;
+}
+input#file-name {
+  font 1.8em;
+  min-width: 20em;
+}
+textarea {
+  margin-bottom: 1.5em;
+}
