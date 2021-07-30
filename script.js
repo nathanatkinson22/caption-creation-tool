@@ -58,5 +58,5 @@ document.getElementById("download-btn").addEventListener("click", function(){
   var fileText = fileTextData.replace(/<br\s*[\/]?>/gi, "\n");
   var fileName = document.getElementById('filename').innerHTML;
     
-    download(fileName + " Captions TXT.txt", fileText);
+    download(fileName + ".txt", fileText);
 }, false);
