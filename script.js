@@ -25,7 +25,7 @@ function fold(s, n, useSpaces, a) {
         a.push(s);
         return a;
     }
-    var line = s.substring(0, n);
+    var line = s.substring(0, n).trim();
 
         var lastSpaceRgx = /\s(?!.*\s)/;
         var idx = line.search(lastSpaceRgx);
