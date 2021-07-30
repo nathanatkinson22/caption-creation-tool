@@ -22,7 +22,7 @@ $(function () {
 function fold(s, n, useSpaces, a) {
     a = a || [];
     if (s.length <= n) {
-        a.push(s);
+        a.push(s.trim());
         return a;
     }
     var line = s.substring(0, n).trim();
@@ -34,7 +34,7 @@ function fold(s, n, useSpaces, a) {
             line = line.substring(0, idx);
             nextIdx = idx;
         }
-        a.push(line +"\n" +"\n");
+        a.push(line.trim() +"\n");
         return fold(s.substring(nextIdx), n, useSpaces, a);
 }
 
